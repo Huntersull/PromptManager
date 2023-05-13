@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Prompt Management Application</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/clipboard.js"></script>
+</head>
+<body>
+    <div id="prompt-container" class="prompt-container">
+        <!-- Prompts will be dynamically added here -->
+    </div>
+
+    <button class="add-prompt-button" onclick="showAddPromptForm()">Add Prompt</button>
+
+    <form id="add-prompt-form" class="prompt-form">
+        <input type="text" name="title" placeholder="Prompt Title">
+        <textarea name="text" placeholder="Prompt Text (use {#}[Token Label] for tokens)"></textarea>
+        <button class="submit-button" type="submit">Add</button>
+    </form>
+
+    <div id="copied-message" class="copied-message">
+        Copied to Clipboard
+    </div>
+</body>
+</html>
